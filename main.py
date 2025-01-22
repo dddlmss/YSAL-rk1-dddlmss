@@ -119,7 +119,7 @@ def image_to_base64(image_path):
         return base64.b64encode(img_file.read()).decode('utf-8')
 #과제--------------------------------------------------------------------------------
 # 과제-1:팀 이름 입력(농구/야구/축구/E-Sports 중 적어주세요)
-team = "농구팀팀"
+team = "농구"
 
 # 과제-2:본인을 나타내는 사진을 !반드시! 동일 폴더 안에 넣고 아래에 옳은 파일명을 입력해주세요
 photo_path = 'image.jpg'
@@ -128,8 +128,8 @@ photo_path = 'image.jpg'
 introduction = "안녕하세요???????????"
 # 이후 실행하고
 # 터미널에 입력할 User inputs(이름, 전공)
-name = input("Enter your name: 이든")
-student_major = input("Enter your major: 국어국문학과")
+name = input("Enter your name:")
+student_major = input("Enter your major:")
 
 # Generate and save profile as an image
 generate_profile(name, student_major, team, photo_path, introduction, output_image_path=name+"_profile.png")
