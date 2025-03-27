@@ -1,0 +1,65 @@
+body.main-body {
+    background-color: #fdfaf6; /* 아이보리-화이트 느낌 */
+    color: #333;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.8;
+  }
+  
+  h1.main-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #5c4631; /* 브런치 느낌 브라운 */
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  p.main-paragraph {
+    font-size: 18px;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #444;
+  }
+  
+  span.highlight {
+    color: #8b6f47; /* 포인트 브라운 */
+    font-weight: 600;
+  }
+  
+  .main-image {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    margin-top: 48px;
+  }
+
+  .book-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 48px;
+  }
+  
+  .book-list li {
+    background-color: #f8f5f1;         /* 연한 베이지 톤 */
+    border: 1px solid #e0dcd5;         /* 얇은 선 */
+    border-radius: 12px;               /* 둥근 모서리 */
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .book-list li:hover {
+    background-color: #f0ebe5;         /* hover 시 살짝 어두운 베이지 */
+  }
+  
+  .book-list li a {
+    text-decoration: none;
+    color: #4b3d2d;                    /* 고급 브라운 느낌 */
+    font-weight: 500;
+    font-size: 18px;
+    display: block;
+  }
+  
