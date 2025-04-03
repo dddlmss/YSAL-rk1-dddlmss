@@ -3,8 +3,10 @@
 <head>
     <title>WEB1 - html</title>
     <meta charset="'utf-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href='css/3style.css'>
 </head>
-<body>
+<body class='main body'>
     <h1><strong><u><a href='2.html'>든의 홈</a></u></strong></h1>
     <h2><strong>방금 떠나온 세계 - 김초엽</strong></h2>
 
@@ -15,7 +17,7 @@
 
 <br><br>
 
-<p> ["양말이 사막 구석에서 모자를 쓰고 발견되었다.........]
+<p> ["양말이 사막 구석에서 모자를 쓰고 발견되었다........."]
     <br><br>
 
 </p><p style="margin-top:45px;"> 아래에는 제가 그동안 인상 깊게 읽었던 책 몇 개입니다!</p>
@@ -27,5 +29,41 @@
     <li><a href='6.html'>책과 우연들</a></li>
 </ol>
 
+</section>
+
+
+<button id="modeToggleBtn" class="border p-2 mt-4">야간 모드로 전환</button>
+
+<script>
+  // getElementById() 사용
+  const toggleBtn = document.getElementById("modeToggleBtn");
+
+  // getElementByClassName() 사용
+  const body = document.getElementsByClassName("main-body")[0];
+  const title = document.getElementsByClassName("main-title")[0];
+  const paragraph = document.getElementsByClassName("main-paragraph")[0];
+
+  // onclick 사용
+  toggleBtn.onclick = function () {
+    alert("모드가 전환됩니다!"); // alert() 사용
+  };
+
+  // addEventListener 사용
+  toggleBtn.addEventListener("click", function () {
+    console.log("버튼이 클릭되었습니다."); // console.log 사용
+
+    // 토글 로직
+    if (body.classList.contains("night")) {
+      body.classList.remove("night");
+      toggleBtn.textContent = "야간 모드로 전환";
+    } else {
+      body.classList.add("night");
+      toggleBtn.textContent = "주간 모드로 전환";
+    }
+  });
+</script>
+
+
 </body>
+
 </html>
